@@ -64,3 +64,14 @@ model Profile {
   bio  String?
   User User[]
 }
+
+model Boreds {
+ id Int @id @default(autoincrement())
+ activity String?@db.Text
+ accessibility Float
+ type String?@db.Text
+ price Float
+ participants Int
+ link String?@db.Text
+ key String?@db.Text
+}

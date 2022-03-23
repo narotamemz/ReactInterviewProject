@@ -4,6 +4,9 @@
 const { i18n } = require('./next-i18next.config');
 
 module.exports = {
+  publicRuntimeConfig: {
+      BASE_URL: process.env.NEXTAUTH_URL
+  },
   reactStrictMode: true,
   images: {
     domains: [
